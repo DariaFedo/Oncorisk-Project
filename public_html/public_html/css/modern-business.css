@@ -20,3 +20,32 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.social {
+  text-align: center;
+  color: #fef;
+  padding: 10px;
+}
+
+.social > li {
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+}
+
+a {
+  /* Typography Declrations */
+  font-weight: bold;
+  text-decoration: none;
+  color: #d1dbbd;
+}
+
+a:hover {
+  /* Tyopography Declarations */
+  color: #fcfff5;
+}
+
+a:visited {
+  /* Typography Declarations */
+  color: #d1dbbd;
+}
