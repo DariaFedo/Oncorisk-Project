@@ -39,7 +39,7 @@ h2 {
   color: #fff;
 }
 .masthead {
-  padding: 6em 0;
+  padding: 15em 0;
   background-image: url("https://bit.ly/2XjVuBX");
   background-color: #1faaff;
   background-size: cover;
@@ -52,17 +52,13 @@ h2 {
 }
 .masthead-heading {
   margin-top: -0.2em;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "Georgia", sans-serif;
   font-weight: bold;
   font-size: 6em;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
-.questions-section h2 {
-  font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 1.2em;
-  font-weight: bold;
-}
+
 .introduction-section,
 .location-section,
 .questions-section {
@@ -82,17 +78,6 @@ h2 {
   display: inline-block;
   margin: 5px;
   text-align: center;
-}
-
-footer p {
-  font-weight: 300;
-  letter-spacing: 0.05em;
-}
-
-.side-padding {
-  /* Layout Declarations */
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 .about {
@@ -128,10 +113,6 @@ footer p {
   opacity: 1;
   border: 2px solid #e6e6e6;
   font-size: 42px;
-  -webkit-transform: scale(1.1, 1.1) rotate(360deg);
-  -moz-transform: scale(1.1, 1.1) rotate(360deg);
-  -o-transform: scale(1.1, 1.1) rotate(360deg);
-  transform: scale(1.1, 1.1) rotate(360deg);
 }
 .about-item:hover h2 {
   opacity: 1;
