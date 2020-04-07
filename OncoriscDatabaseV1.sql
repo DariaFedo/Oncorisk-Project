@@ -68,6 +68,7 @@ type = InnoDB;
 create table uzytkownik
 (
    user_id              int not null,
+   lokalizacja text,
    primary key (user_id)
 )
 type = InnoDB;
