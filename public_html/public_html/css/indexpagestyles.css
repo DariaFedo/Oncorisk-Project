@@ -1,49 +1,91 @@
-.mycontainer{
-    top: 40%;
-    left:20%;
-    position:absolute;
-  }
-  
-  .mouse {
-    display: block;
-    width: 35px;
-    height: 65px;
-    border-radius: 15px 15px 15px 15px;
-    border: 3px solid #ddd;
-    margin: auto;
-    position: relative;
-    top: -80px;
-  }
-  
-  .mouse span {
-    display: block;
-    margin: 6px auto;
-    width: 5px;
-    height: 8px;
-    border-radius: 2px;
-    background: #ddd;
-    border: 1px solid transparent;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-    animation-name: scroll;
-  }
-  
-  @keyframes scroll {
-    0% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(20px);
-      -ms-transform: translateY(20px);
-      transform: translateY(20px);
-      }
-  }
+.mycontainer {
+ top: 40%;
+ left: 20%;
+ position: absolute;
+}
+
+.mouse {
+ display: block;
+ width: 35px;
+ height: 65px;
+ border-radius: 15px 15px 15px 15px;
+ border: 3px solid #fff;
+ margin: auto;
+ position: relative;
+ top: -80px;
+}
+
+.mouse span {
+ display: block;
+ margin: 6px auto;
+ width: 5px;
+ height: 8px;
+ border-radius: 2px;
+ background: #fff;
+ border: 1px solid transparent;
+ -webkit-animation-duration: 2s;
+ animation-duration: 2s;
+ -webkit-animation-fill-mode: both;
+ animation-fill-mode: both;
+ -webkit-animation-iteration-count: infinite;
+ animation-iteration-count: infinite;
+ -webkit-animation-name: scroll;
+ animation-name: scroll;
+}
+
+@keyframes scroll {
+ 0% {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+ }
+ 60% {
+  opacity: 1;
+ }
+ 100% {
+  opacity: 0;
+  -webkit-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  transform: translateY(40px);
+ }
+}
+
+.wavebackground {
+ margin-top: 5em;
+ background-image: url(../Assets/WaveFootegbackground.svg);
+ background-size: cover;
+}
+
+.person {
+ width: 3em;
+ height: 3em;
+ background-color: #999;
+ border-radius: 50%;
+}
+.person2 {
+ width: 4em;
+ height: 4em;
+ background-color: #aaa;
+ border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+ .mediascaling {
+  font-size: 35pt;
+ }
+ .mycontainer {
+  top: 20%;
+  left: 15%;
+ }
+}
+@media (max-width: 576px) {
+ .mycontainer {
+  top: 10%;
+  left: 5%;
+ }
+}
+
+h5 {
+ font-size: 1.4em;
+}

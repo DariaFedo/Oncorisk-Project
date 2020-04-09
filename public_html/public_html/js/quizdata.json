@@ -1,0 +1,78 @@
+{
+ "questions": [
+  {
+   "question": "Characterized by skill at understanding and profiting by circumstances",
+   "options": ["Prescient", "Analyst", "Diminution", "Shrewd", "Answer"],
+   "answer": "Shrewd",
+   "category": 1,
+   "prompt": "Lorem ipsum dolor sit amet"
+  },
+  {
+   "question": "To refuse to acknowledge as one's own or as connected with oneself",
+   "options": ["Prevalent", "Disown", "Squalid", "Employee"],
+   "answer": "Disown",
+   "category": 2,
+   "prompt": "Praesent lobortis ac augue id elementum. Nam eget mi at nunc pellentesque laoreet quis sed quam. Quisque pellentesque felis at urna accumsan, eu rutrum erat hendrerit. In non iaculis arcu. In dictum scelerisque lectus, eu consectetur libero malesuada eu. In ac dictum justo. Suspendisse potenti. Vivamus vel eros enim. Praesent rutrum turpis et orci ornare tempor. Phasellus in justo vel justo scelerisque eleifend. Sed aliquet tortor neque, in hendrerit sem ullamcorper quis. Mauris volutpat dictum massa lacinia vehicula. Etiam non volutpat ex, ac lacinia nibh. Donec sed justo commodo, dictum lectus non, viverra urna. Nam sed dui et nibh elementum rhoncus eget quis est. Duis dictum tincidunt justo non sodales."
+  },
+  {
+   "question": "Not having the abilities desired or necessary for any purpose",
+   "options": ["Incompetent", "Impoverish", "Coxswain", "Devious"],
+   "answer": "Incompetent",
+   "category": 3
+  },
+  {
+   "question": "Lizard that changes color in different situations",
+   "options": ["Scruple", "Depredation", "Chameleon", "Whimsical"],
+   "answer": "Chameleon",
+   "category": 1
+  },
+  {
+   "question": "Having the title of an office without the obligations",
+   "options": ["Reciprocal", "Unsullied", "Titular", "Inflated"],
+   "answer": "Titular",
+   "category": 2
+  },
+  {
+   "question": "An expression of disapproval or blame personally addressed to one censured",
+   "options": ["Pitiful", "Reproof", "Mutation", "Raillery"],
+   "answer": "Reproof",
+   "category": 3
+  },
+  {
+   "question": "To deliver an elaborate or formal public speech.",
+   "options": ["Orate", "Magician", "Access", "Guzzle"],
+   "answer": "Orate",
+   "category": 2
+  },
+  {
+   "question": "A wharf or artificial landing-place on the shore of a harbor or projecting into it",
+   "options": ["Intolerable", "Quay", "Fez", "Insatiable"],
+   "answer": "Quay",
+   "category": 3
+  },
+  {
+   "question": "Friendly counsel given by way of warning and implying caution or reproof",
+   "options": ["Credence", "Colloquy", "Abyss", "Monition"],
+   "answer": "Monition",
+   "category": 1
+  },
+  {
+   "question": "To make a beginning in some occupation or scheme",
+   "options": ["Muster", "Embark", "Ocular", "Apprehensible"],
+   "answer": "Ocular",
+   "category": 2
+  },
+  {
+   "question": "Able to reinforce sound by sympathetic vibrations",
+   "options": ["Resonance", "Clandestine", "Diffusion", "Quietus"],
+   "answer": "Resonance",
+   "category": 3
+  },
+  {
+   "question": "To send off or consign, as to an obscure position or remote destination",
+   "options": ["Monolith", "Endurable", "Efficient", "Relegate"],
+   "answer": "Relegate",
+   "category": 1
+  }
+ ]
+}
