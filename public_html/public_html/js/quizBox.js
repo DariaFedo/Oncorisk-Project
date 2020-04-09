@@ -1,29 +1,5 @@
 var $progressValue = 0
 var resultList = []
-let quizdata = []
-const xhttp = new XMLHttpRequest()
-
-/*** Take questions from prepared file ***/
-var request = $.getJSON('js/quizdata.json', function () {
- console.log('success')
- var response = JSON.parse(request.responseText)
- quizdata = response.questions
-})
- .done(function () {
-  console.log('second success')
- })
- .fail(function () {
-  console.log('error')
- })
- .always(function () {
-  console.log('complete')
- })
-
-/*** Return shuffled question ***/
-function prepareQuestions() {
- var questions = quizdata
- return questions
-}
 
 /*** Return list of options ***/
 function returnOptionList(opts, i) {
@@ -340,61 +316,71 @@ $(document).ready(function () {
  var presentIndex = 0
  var clicked = 0
 
- var questions = prepareQuestions()
- renderQuiz(questions, presentIndex)
- getProgressindicator(questions.length)
+ const data = { username: 'example' }
+ var questions
 
- $('.answerOptions ').on('click', '.myoptions>input', function (e) {
-  clicked = $(this).val()
+ fetch('js/quizdata.json')
+  .then((response) => {
+   return response.json()
+  })
+  .then((data) => {
+   questions = data.questions
 
-  if (questions.length == presentIndex + 1) {
-   $('#submit').removeClass('hidden')
-   $('#next').addClass('hidden')
-  } else {
-   $('#next').removeClass('hidden')
-  }
- })
+   renderQuiz(questions, presentIndex)
+   getProgressindicator(questions.length)
 
- $('#next').on('click', function (e) {
-  e.preventDefault()
-  addClickedAnswerToResult(questions, presentIndex, clicked)
+   $('.answerOptions ').on('click', '.myoptions>input', function (e) {
+    clicked = $(this).val()
 
-  $(this).addClass('hidden')
+    if (questions.length == presentIndex + 1) {
+     $('#submit').removeClass('hidden')
+     $('#next').addClass('hidden')
+    } else {
+     $('#next').removeClass('hidden')
+    }
+   })
 
-  presentIndex++
-  renderQuiz(questions, presentIndex)
-  changeProgressValue()
- })
+   $('#next').on('click', function (e) {
+    e.preventDefault()
+    addClickedAnswerToResult(questions, presentIndex, clicked)
 
- $('#submit').on('click', function (e) {
-  addClickedAnswerToResult(questions, presentIndex, clicked)
-  $('.multipleChoiceQues').hide()
-  $('.resultArea').show()
-  renderResult(resultList)
- })
+    $(this).addClass('hidden')
 
- $('.resultArea').on('click', '.viewchart', function () {
-  $('.resultPage2').show()
-  $('.resultPage1').hide()
-  $('.resultPage3').hide()
-  renderChartResult(resultList)
- })
+    presentIndex++
+    renderQuiz(questions, presentIndex)
+    changeProgressValue()
+   })
 
- $('.resultArea').on('click', '.backBtn', function () {
-  $('.resultPage1').show()
-  $('.resultPage2').hide()
-  $('.resultPage3').hide()
-  renderResult(resultList)
- })
+   $('#submit').on('click', function (e) {
+    addClickedAnswerToResult(questions, presentIndex, clicked)
+    $('.multipleChoiceQues').hide()
+    $('.resultArea').show()
+    renderResult(resultList)
+   })
 
- $('.resultArea').on('click', '.viewanswer', function () {
-  $('.resultPage3').show()
-  $('.resultPage2').hide()
-  $('.resultPage1').hide()
-  getAllAnswer(resultList)
- })
+   $('.resultArea').on('click', '.viewchart', function () {
+    $('.resultPage2').show()
+    $('.resultPage1').hide()
+    $('.resultPage3').hide()
+    renderChartResult(resultList)
+   })
 
- $('.resultArea').on('click', '.replay', function () {
-  window.location.reload(true)
- })
+   $('.resultArea').on('click', '.backBtn', function () {
+    $('.resultPage1').show()
+    $('.resultPage2').hide()
+    $('.resultPage3').hide()
+    renderResult(resultList)
+   })
+
+   $('.resultArea').on('click', '.viewanswer', function () {
+    $('.resultPage3').show()
+    $('.resultPage2').hide()
+    $('.resultPage1').hide()
+    getAllAnswer(resultList)
+   })
+
+   $('.resultArea').on('click', '.replay', function () {
+    window.location.reload(true)
+   })
+  })
 })
