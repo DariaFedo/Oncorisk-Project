@@ -1,0 +1,80 @@
+{
+ "title": "Test Survey number 1",
+ "pages": [
+  {
+   "name": "page1",
+   "elements": [
+    {
+     "type": "checkbox",
+     "name": "question1",
+     "title": "Lorem ipsum",
+     "description": "Praesent lobortis ac augue id elementum. Nam eget mi at nunc pellentesque laoreet quis sed quam. Quisque pellentesque felis at urna accumsan, eu rutrum erat hendrerit. In non iaculis arcu. In dictum scelerisque lectus, eu consectetur libero malesuada eu. In ac dictum justo. Suspendisse potenti. Vivamus vel eros enim. Praesent rutrum turpis et orci ornare tempor. Phasellus in justo vel justo scelerisque eleifend. Sed aliquet tortor neque, in hendrerit sem ullamcorper quis. Mauris volutpat dictum massa lacinia vehicula. Etiam non volutpat ex, ac lacinia nibh. Donec sed justo commodo, dictum lectus non, viverra urna. Nam sed dui et nibh elementum rhoncus eget quis est. Duis dictum tincidunt justo non sodales.",
+     "choices": ["item1", "item2", "item3"]
+    }
+   ]
+  },
+  {
+   "name": "page2",
+   "elements": [
+    {
+     "type": "imagepicker",
+     "name": "question2",
+     "title": "Lorem Ipsum",
+     "description": "Dolor Sit Amet Praesent lobortis ac augue id elementum. Nam eget mi at nunc pellentesque laoreet quis sed quam. Quisque pellentesque felis at urna accumsan, eu rutrum erat hendrerit. In non iaculis arcu. In dictum scelerisque lectus, eu consectetur libero malesuada eu. In ac dictum justo. Suspendisse potenti. Vivamus vel eros enim. Praesent rutrum turpis et orci ornare tempor. Phasellus in justo vel justo scelerisque eleifend. Sed aliquet tortor neque, in hendrerit sem ullamcorper quis. Mauris volutpat dictum massa lacinia vehicula. Etiam non volutpat ex, ac lacinia nibh. Donec sed justo commodo, dictum lectus non, viverra urna. Nam sed dui et nibh elementum rhoncus eget quis est. Duis dictum tincidunt justo non sodales.",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "lion",
+       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg"
+      },
+      {
+       "value": "giraffe",
+       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"
+      },
+      {
+       "value": "panda",
+       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"
+      },
+      {
+       "value": "camel",
+       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"
+      }
+     ]
+    }
+   ],
+   "multiselect": true
+  },
+  {
+   "name": "page3",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "question4",
+     "isRequired": true,
+     "choices": ["item1", "item2", "item3"]
+    }
+   ]
+  },
+  {
+   "name": "page4",
+   "elements": [
+    {
+     "type": "rating",
+     "name": "question3",
+     "title": "How often in week",
+     "description": "Praesent lobortis ac augue id elementum. Nam eget mi at nunc pellentesque laoreet quis sed quam. Quisque pellentesque felis at urna accumsan, eu rutrum erat hendrerit. In non iaculis arcu. In dictum scelerisque lectus, eu consectetur libero malesuada eu. In ac dictum justo. Suspendisse potenti. Vivamus vel eros enim. Praesent rutrum turpis et orci ornare tempor. Phasellus in justo vel justo scelerisque eleifend. Sed aliquet tortor neque, in hendrerit sem ullamcorper quis. Mauris volutpat dictum massa lacinia vehicula. Etiam non volutpat ex, ac lacinia nibh. Donec sed justo commodo, dictum lectus non, viverra urna. Nam sed dui et nibh elementum rhoncus eget quis est. Duis dictum tincidunt justo non sodales."
+    }
+   ]
+  }
+ ],
+ "cookieName": "Survey111",
+ "showQuestionNumbers": "off",
+ "questionDescriptionLocation": "underInput",
+ "showProgressBar": "bottom",
+ "progressBarType": "questions",
+ "checkErrorsMode": "onValueChanged",
+ "startSurveyText": "Start",
+ "pagePrevText": "Previous",
+ "pageNextText": "Next",
+ "completeText": "Submit"
+}

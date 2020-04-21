@@ -319,7 +319,7 @@ $(document).ready(function () {
  const data = { username: 'example' }
  var questions
 
- fetch('js/quizdata.json')
+ fetch('./../json/quizdata.json')
   .then((response) => {
    return response.json()
   })
