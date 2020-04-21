@@ -1,8 +1,8 @@
 /*==============================================================*/
-/* DBMS name:      MySQL 5.0                                    */
+/* DBMS name:      xttczuqj_oncoriscDb                                   */
 /* Created on:     06.04.2020 12:42:09                          */
 /*==============================================================*/
-
+select database xttczuqj_oncoriscDb;
 
 drop table if exists archiwum;
 
