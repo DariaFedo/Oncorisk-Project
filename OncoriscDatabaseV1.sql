@@ -70,6 +70,10 @@ LOCK TABLES `kategorie` WRITE;
 /*!40000 ALTER TABLE `kategorie` DISABLE KEYS */;
 /*!40000 ALTER TABLE `kategorie` ENABLE KEYS */;
 UNLOCK TABLES;
+--
+CREATE TABLE `odwiedziny` (
+  `id_odwiedzin` int(11) NOT NULL AUTO_INCREMENT,  PRIMARY KEY (`id_odwiedzin`)
+);
 
 --
 -- Table structure for table `odpowiedzi`
@@ -107,7 +111,7 @@ DROP TABLE IF EXISTS `pytania`;
 CREATE TABLE `pytania` (
   `id_pytania` int(11) NOT NULL,
   `id_kategorii` int(11) NOT NULL,
-  `treœæ_pytania` text NOT NULL,
+  `tresc_pytania` text NOT NULL,
   PRIMARY KEY (`id_pytania`),
   KEY `id_pytania` (`id_pytania`),
   KEY `id_kategorii` (`id_kategorii`),
