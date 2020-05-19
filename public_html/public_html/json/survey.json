@@ -1,80 +1,344 @@
 {
- "title": "Test Survey number 1",
  "pages": [
   {
-   "name": "page1",
-   "elements": [
-    {
-     "type": "checkbox",
-     "name": "question1",
-     "title": "Lorem ipsum",
-     "description": "Praesent lobortis ac augue id elementum. Nam eget mi at nunc pellentesque laoreet quis sed quam. Quisque pellentesque felis at urna accumsan, eu rutrum erat hendrerit. In non iaculis arcu. In dictum scelerisque lectus, eu consectetur libero malesuada eu. In ac dictum justo. Suspendisse potenti. Vivamus vel eros enim. Praesent rutrum turpis et orci ornare tempor. Phasellus in justo vel justo scelerisque eleifend. Sed aliquet tortor neque, in hendrerit sem ullamcorper quis. Mauris volutpat dictum massa lacinia vehicula. Etiam non volutpat ex, ac lacinia nibh. Donec sed justo commodo, dictum lectus non, viverra urna. Nam sed dui et nibh elementum rhoncus eget quis est. Duis dictum tincidunt justo non sodales.",
-     "choices": ["item1", "item2", "item3"]
-    }
-   ]
-  },
-  {
-   "name": "page2",
-   "elements": [
-    {
-     "type": "imagepicker",
-     "name": "question2",
-     "title": "Lorem Ipsum",
-     "description": "Dolor Sit Amet Praesent lobortis ac augue id elementum. Nam eget mi at nunc pellentesque laoreet quis sed quam. Quisque pellentesque felis at urna accumsan, eu rutrum erat hendrerit. In non iaculis arcu. In dictum scelerisque lectus, eu consectetur libero malesuada eu. In ac dictum justo. Suspendisse potenti. Vivamus vel eros enim. Praesent rutrum turpis et orci ornare tempor. Phasellus in justo vel justo scelerisque eleifend. Sed aliquet tortor neque, in hendrerit sem ullamcorper quis. Mauris volutpat dictum massa lacinia vehicula. Etiam non volutpat ex, ac lacinia nibh. Donec sed justo commodo, dictum lectus non, viverra urna. Nam sed dui et nibh elementum rhoncus eget quis est. Duis dictum tincidunt justo non sodales.",
-     "isRequired": true,
-     "choices": [
-      {
-       "value": "lion",
-       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg"
-      },
-      {
-       "value": "giraffe",
-       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg"
-      },
-      {
-       "value": "panda",
-       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg"
-      },
-      {
-       "value": "camel",
-       "imageLink": "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg"
-      }
-     ]
-    }
-   ],
-   "multiselect": true
-  },
-  {
-   "name": "page3",
+   "name": "PersonalRisk",
    "elements": [
     {
      "type": "radiogroup",
+     "name": "question1",
+     "title": "Co się dzieje z twoją skórą na słońcu?",
+     "defaultValue": "item1",
+     "choices": [
+      {
+       "value": "Nie opala się nigdy",
+       "text": "Nie opala się nigdy"
+      },
+      {
+       "value": "Opala z trudem",
+       "text": "Opala z trudem"
+      },
+      {
+       "value": "Łatwo opala",
+       "text": "Łatwo opala"
+      },
+      {
+       "value": "Zawsze opala",
+       "text": "Zawsze opala"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "question2",
+     "title": "Czy posiadasz piegi?",
+     "choices": [
+      {
+       "value": "Tak",
+       "text": "Tak"
+      },
+      {
+       "value": "Nie",
+       "text": "Nie"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "question3",
+     "title": "Jak dużo masz piegów?",
+     "choices": [
+      {
+       "value": "Nie posiadam ",
+       "text": "Nie posiadam "
+      },
+      {
+       "value": "Mniej niż 20",
+       "text": "Mniej niż 20"
+      },
+      {
+       "value": "Więcej niż 20",
+       "text": "Więcej niż 20"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
      "name": "question4",
-     "isRequired": true,
-     "choices": ["item1", "item2", "item3"]
+     "title": "Czy masz pieprzyki o nieregularnym brzegu i kolorze?",
+     "choices": [
+      {
+       "value": "Tak",
+       "text": "Tak"
+      },
+      {
+       "value": "Nie",
+       "text": "Nie"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "question5",
+     "title": "Jaki jest twój naturalny kolor włosów?",
+     "choices": [
+      {
+       "value": "Czarny",
+       "text": "Czarny"
+      },
+      {
+       "value": "Brązowy",
+       "text": "Brązowy"
+      },
+      {
+       "value": "Blond",
+       "text": "Blond"
+      },
+      {
+       "value": "Rude",
+       "text": "Rude"
+      }
+     ],
+     "otherText": "Rude"
+    },
+    {
+     "type": "radiogroup",
+     "name": "question6",
+     "title": "Ile razy miałeś poważne oparzenia słoneczne?",
+     "choices": [
+      {
+       "value": "Nigdy",
+       "text": "Nigdy"
+      },
+      {
+       "value": "Raz lub dwa",
+       "text": "Raz lub dwa"
+      },
+      {
+       "value": "Trzy lub więcej",
+       "text": "Trzy lub więcej"
+      }
+     ],
+     "otherText": "Rude"
     }
    ]
   },
   {
-   "name": "page4",
+   "name": "LevelOfConcern",
    "elements": [
     {
-     "type": "rating",
-     "name": "question3",
-     "title": "How often in week",
-     "description": "Praesent lobortis ac augue id elementum. Nam eget mi at nunc pellentesque laoreet quis sed quam. Quisque pellentesque felis at urna accumsan, eu rutrum erat hendrerit. In non iaculis arcu. In dictum scelerisque lectus, eu consectetur libero malesuada eu. In ac dictum justo. Suspendisse potenti. Vivamus vel eros enim. Praesent rutrum turpis et orci ornare tempor. Phasellus in justo vel justo scelerisque eleifend. Sed aliquet tortor neque, in hendrerit sem ullamcorper quis. Mauris volutpat dictum massa lacinia vehicula. Etiam non volutpat ex, ac lacinia nibh. Donec sed justo commodo, dictum lectus non, viverra urna. Nam sed dui et nibh elementum rhoncus eget quis est. Duis dictum tincidunt justo non sodales."
+     "type": "radiogroup",
+     "name": "question7",
+     "title": "Czy w ciągu ostatnich 6 miesięcy miałeś wizytę u lekarza rodzinnego z powodu zmiany skóry?",
+     "defaultValue": "item1",
+     "choices": [
+      {
+       "value": "Tak",
+       "text": "Tak"
+      },
+      {
+       "value": "Nie",
+       "text": "Nie"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "question8",
+     "title": "Jakie jest prawdopodobieństwo, że pójdziesz na wizytę do lekarza rodzinnego ze zmianą skóry w ciągu najbliższych 6 miesięcy?",
+     "defaultValue": "item1",
+     "choices": [
+      {
+       "value": "Bardzo prawdopodobne",
+       "text": "Bardzo prawdopodobne"
+      },
+      {
+       "value": "Prawdopodobne",
+       "text": "Prawdopodobne"
+      },
+      {
+       "value": "Mało prawdopodobne",
+       "text": "Mało prawdopodobne"
+      },
+      {
+       "value": "Bardzo mało prawdopodobne",
+       "text": "Bardzo mało prawdopodobne"
+      }
+     ],
+     "otherText": "Bardzoało prawdopodobne"
+    },
+    {
+     "type": "radiogroup",
+     "name": "question9",
+     "title": "Jak często sprawdzasz swoją skórę pod kątem piegów?",
+     "defaultValue": "item1",
+     "choices": [
+      {
+       "value": "Kilka razy w miesiącu",
+       "text": "Kilka razy w miesiącu"
+      },
+      {
+       "value": "Raz w miesiącu",
+       "text": "Raz w miesiącu"
+      },
+      {
+       "value": "Raz lub dwa w roku",
+       "text": "Raz lub dwa w roku"
+      },
+      {
+       "value": "Nie sprawdzam",
+       "text": "Nie sprawdzam"
+      }
+     ],
+     "otherText": "Nie sprawdzam "
+    }
+   ]
+  },
+  {
+   "name": "ProtectiveBehaviour",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "question10",
+     "title": "Czy opalasz się w domu lub na wakacjach?",
+     "choices": [
+      {
+       "value": "Tak",
+       "text": "Tak"
+      },
+      {
+       "value": "Nie",
+       "text": "Nie"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "question11",
+     "title": "Czy korzystasz z solarium lub lamp słonecznych?",
+     "choices": [
+      {
+       "value": "Tak",
+       "text": "Tak"
+      },
+      {
+       "value": "Nie",
+       "text": "Nie"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "question12",
+     "title": "Jeśli korzystasz z solarium lub lampy słonecznej to jak często?",
+     "choices": [
+      {
+       "value": "Bardzo rzadko",
+       "text": "Bardzo rzadko"
+      },
+      {
+       "value": "1-3 razy w roku",
+       "text": "1-3 razy w roku"
+      },
+      {
+       "value": "Raz w miesiącu",
+       "text": "Raz w miesiącu"
+      },
+      {
+       "value": "Co tydzień lub częściej",
+       "text": "Co tydzień lub częściej"
+      }
+     ],
+     "otherText": "Co tydzień lub częściej"
+    },
+    {
+     "type": "radiogroup",
+     "name": "question13",
+     "title": "Czy chronisz swoją skórę w domu czy na wakacjach?",
+     "choices": [
+      {
+       "value": "Tak",
+       "text": "Tak"
+      },
+      {
+       "value": "Nie",
+       "text": "Nie"
+      }
+     ],
+     "otherText": "Co tydzień lub częściej"
+    },
+    {
+     "type": "radiogroup",
+     "name": "question14",
+     "title": "Na ilu słonecznych wakacjach byłeś w ciągu ostatnich 5 lat?",
+     "choices": [
+      {
+       "value": "Nie byłem",
+       "text": "Nie byłem"
+      },
+      {
+       "value": "Jeden lub dwa",
+       "text": "Jeden lub dwa"
+      },
+      {
+       "value": "Trzy lub cztery",
+       "text": "Trzy lub cztery"
+      },
+      {
+       "value": "Pięć lub więcej",
+       "text": "Pięć lub więcej"
+      }
+     ],
+     "otherText": "Pięć lub więcej"
+    },
+    {
+     "type": "radiogroup",
+     "name": "question15",
+     "title": "Co robisz gdy zauważysz nowego pieprzyka?",
+     "choices": [
+      {
+       "value": "Odwiedzam lekarza ogólnego",
+       "text": "Odwiedzam lekarza ogólnego"
+      },
+      {
+       "value": "Proszę partnera/partnerkę, aby spojrzał",
+       "text": "Proszę partnera/partnerkę, aby spojrzał"
+      },
+      {
+       "value": "Ignoruje to",
+       "text": "Ignoruje to"
+      }
+     ],
+     "otherText": "Pięć lub więcej"
+    },
+    {
+     "type": "radiogroup",
+     "name": "question16",
+     "title": "Jak szybko powinien zostać sprawdzony nowy pieprzyk?",
+     "choices": [
+      {
+       "value": "Mniej niż w miesiąc",
+       "text": "Mniej niż w miesiąc"
+      },
+      {
+       "value": "Mniej niż w dwa miesiące",
+       "text": "Mniej niż w dwa miesiące"
+      },
+      {
+       "value": "Mniej niż w trzy miesiące",
+       "text": "Mniej niż w trzy miesiące"
+      },
+      {
+       "value": "Ostatecznie",
+       "text": "Ostatecznie"
+      },
+      {
+       "value": "Nigdy",
+       "text": "Nigdy"
+      }
+     ],
+     "otherText": "Nigdy"
     }
    ]
   }
- ],
- "cookieName": "Survey111",
- "showQuestionNumbers": "off",
- "questionDescriptionLocation": "underInput",
- "showProgressBar": "bottom",
- "progressBarType": "questions",
- "checkErrorsMode": "onValueChanged",
- "startSurveyText": "Start",
- "pagePrevText": "Previous",
- "pageNextText": "Next",
- "completeText": "Submit"
+ ]
 }

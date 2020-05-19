@@ -2,12 +2,15 @@ a {
  cursor: pointer;
  color: white;
 }
+
 a:hover {
  color: white;
 }
+
 .carousel-control-prev {
  max-width: 5%;
 }
+
 .carousel-control-next {
  max-width: 5%;
 }
@@ -40,16 +43,17 @@ a:hover {
  }
  .mycontainer {
   top: 20%;
-  left: 15%;
  }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
  .mycontainer {
-  top: 15%;
-  left: 7.5%;
+  top: 35%;
  }
 }
 
+.arrow {
+ transform: rotate(90deg);
+}
 .btn {
  background-color: #67d2df;
 }
