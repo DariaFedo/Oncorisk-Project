@@ -26,7 +26,7 @@
    <div class="container">
     <a class="navbar-brand" href="index.html">
      <img
-      src="./Assets/logowithoutbackgorund.png"
+      src="./Assets/navbarlogo.svg"
       width="100"
       height="50"
       class="d-inline-block align-top"
@@ -45,7 +45,7 @@
      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-     <ul class="navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto text-center">
       <li class="nav-item">
        <a class="nav-link" href="index.html" id="nav-main-page"
         >Strona główna</a
@@ -66,7 +66,7 @@
         Languages
        </a>
        <div
-        class="dropdown-menu dropdown-menu-right"
+        class="dropdown-menu dropdown-menu-right text-center"
         aria-labelledby="navbarDropdownPortfolio"
        >
         <a class="dropdown-item lang" href="#pl">Polski </a>
@@ -102,6 +102,15 @@
       class="carousel-item"
       style="background-image: url('./Assets/background3.jpg');"
      ></div>
+     <!-- Slide Four - Set the background image for this slide in the line below -->
+     <div
+      class="carousel-item"
+      style="background-image: url('./Assets/background4.jpg');"
+     ></div>
+     <div
+      class="carousel-item"
+      style="background-image: url('./Assets/background5.jpg');"
+     ></div>
     </div>
     <a
      class="carousel-control-prev"
@@ -122,16 +131,13 @@
      <span class="sr-only">Next</span> -->
     </a>
 
-    <div class="mycontainer">
+    <div class="mycontainer text-center">
      <h1
-      class="text-uppercase text-light font-weight-bolder display-2 mediascaling"
+      class="text-uppercase text-light text-center font-weight-bolder mediascaling"
       id="header-main-text"
      ></h1>
-     <a
-      href="survey.html"
-      class="my-5 my-xs-1 btn btn-danger btn-large shadow font-weight-bold"
-     >
-      <h3 id="start-survey-button"></h3>
+     <a href="survey.html" class="my-3 btn btn-large">
+      <h3 class="text-light" id="start-survey-button"></h3>
      </a>
     </div>
    </div>
@@ -140,15 +146,6 @@
   <!-- Page Content -->
   <div class="container my-5">
    <div class="row">
-    <div class="col-lg-6 my-3 align-self-center">
-     <h3 class="text-center" id="counter-1"></h3>
-     <h1
-      class="display-4 text-center font-weight-bold text-danger"
-      id="visitorsNumber"
-     ></h1>
-     <h3 class="text-center" id="counter-2"></h3>
-    </div>
-
     <div class="col-lg-6">
      <h2 class="my-3" id="about-paragraph-header">O naszym projekcie</h2>
      <p class="text-justify" id="about-paragraph-content">
@@ -162,6 +159,15 @@
       doloremque non cum id reprehenderit, quisquam totam aspernatur tempora
       minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
      </p>
+    </div>
+
+    <div class="col-lg-6 my-3 align-self-center">
+     <h3 class="text-center" id="counter-1"></h3>
+     <h1
+      class="display-4 text-center font-weight-bold text-danger"
+      id="visitorsNumber"
+     ></h1>
+     <h3 class="text-center" id="counter-2"></h3>
     </div>
    </div>
   </div>
