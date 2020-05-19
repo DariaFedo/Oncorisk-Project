@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
  <head>
   <meta charset="utf-8" />
   <meta
@@ -9,13 +9,14 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>O projekcie</title>
+  <title>About</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/aboutpagestyles.css" />
+  <link rel="icon" href="favico.png" sizes="any" type="image/png" />
  </head>
 
  <body>
@@ -45,10 +46,10 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
      <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-       <a class="nav-link" href="index.html">Strona główna</a>
+       <a class="nav-link" href="index.html" id="nav-main-page">Strona główna</a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="about.html">O projekcie</a>
+       <a class="nav-link" href="about.html" id="nav-about-page">O projekcie</a>
       </li>
       <li class="nav-item dropdown">
        <a
@@ -58,6 +59,7 @@
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        id="nav-languages"
        >
         Languages
        </a>
@@ -84,37 +86,37 @@
 
   <!-- Introduction Project Description -->
   <section class="introduction-section">
-   <h1>O projekcie</h1>
-   <p>
+   <h1 id="about-project-par-header">O projekcie</h1>
+   <p id="about-project-part1">
     CARIBA (Cancer Risk Behavior Assessment) to innowacyjny i kompleksowy
     projekt dotyczący profilaktyki chorób nowotworowych, powstający w ramach
     prac Studenckiego Koła Naukowego „Oncos” Uniwersytetu Opolskiego.
    </p>
-   <p>
+   <p id="about-project-part2">
     Polega na badaniu zachowań zwiększających ryzyko zachorowania oraz
     prowadzeniu działań edukacyjnych. Projekt w okresie pilotażowym ma mieć
     charakter ogólnopolski
    </p>
-   <p>
+   <p id="about-project-part3">
     Docelowo ma stać się projektem o zasięgu międzynarodowym. Generalnym celem
     projektu jest zmniejszenie zachorowalności na nowotwory złośliwe oraz
     poprawa w zakresie wczesnego wykrywania chorób nowotworowych w populacji
     światowej poprzez:
    </p>
    <ul>
-    <li>
+    <li id="about-list-item1">
      promowanie wiedzy z zakresu profilaktyki onkologicznej w sposób
      interaktywny, przystępny i spersonalizowany
     </li>
-    <li>
+    <li id="about-list-item2">
      zwiększenie świadomości na temat dostępnych metod leczenia i skuteczności
      współczesnej terapii onkologicznej
     </li>
-    <li>
+    <li id="about-list-item3">
      analizy oceniające wiedzę na temat czynników ryzyka i sposobów zapobiegania
      chorobom nowotworowym w różnych kohortach respondentów
     </li>
-    <li>
+    <li id="about-list-item4">
      umożliwienie uzyskania bezpłatnej, szybkiej i indywidualnej analizy ryzyka
      nowotworowego wraz z dedykowanymi zaleceniami
     </li>
@@ -123,8 +125,8 @@
 
   <!-- More information -->
   <section class="location-section">
-   <h1>Więcej</h1>
-   <p>
+   <h1 id="more-info-header">Więcej</h1>
+   <p id="about-more-info-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -195,5 +197,23 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--jQuery i18n Javascript-->
+    <script src="../vendor/i18n/jquery.i18n.js"></script>
+    <script src="../vendor/i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../vendor/i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../vendor/i18n/jquery.i18n.parser.js"></script>
+    <script src="../vendor/i18n/jquery.i18n.emitter.js"></script>
+    <script src="../vendor/i18n/jquery.i18n.language.js"></script>
+    <script src="../vendor/i18n/languages/he.js"></script>
+    <script src="../vendor/i18n/languages/fi.js"></script>
+    <script src="../vendor/i18n/languages/ml.js"></script>
+    <script src="../vendor/i18n/CLDRPluralRuleParser.js"></script>
+
+      <!--Page JavaScript-->
+  <script src="js/about.js"></script>
+
  </body>
 </html>
+
+
