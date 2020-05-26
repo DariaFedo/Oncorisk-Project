@@ -53,8 +53,10 @@ function LanguageOnHashChange() {
 }
 
 const LanguageOnLoad = () => {
- const detectedLanguage = navigator.language
- console.log(detectedLanguage)
+ const detectedLanguage = navigator.language.slice(0, 2)
+ console.log('Detected ' + detectedLanguage)
+ console.log('navigator.language ' + navigator.language)
+ console.log('navigator.userLanguage ' + navigator.userLanguage)
 
  if (translatedLanguages.includes(detectedLanguage)) {
   updateText(detectedLanguage)
@@ -67,7 +69,7 @@ const LanguageOnLoad = () => {
 }
 
 const OnlyDetectLanguage = () => {
- const detectedLanguage = navigator.language
+ const detectedLanguage = navigator.language.slice(0, 2)
  if (translatedLanguages.includes(detectedLanguage)) {
   return detectedLanguage
  }

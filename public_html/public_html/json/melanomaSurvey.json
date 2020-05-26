@@ -49,7 +49,10 @@
     {
      "type": "radiogroup",
      "name": "RespondentAge",
-     "title": "Please indicate the age range you are in",
+     "title": {
+      "default": "Please indicate the age range you are in",
+      "pl": "Zaznacz w jakim przedziale wiekowym się znajdujesz"
+     },
      "isRequired": true,
      "choices": [
       {

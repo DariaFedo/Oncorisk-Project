@@ -79,8 +79,8 @@ function LanguageOnHashChange() {
  }
 }
 function LanguageOnLoad() {
- const detectedLanguage = navigator.language
- console.log(detectedLanguage)
+ const detectedLanguage = navigator.language.slice(0, 2)
+ //console.log(detectedLanguage)
  const translatedLanguages = ['en', 'pl']
  if (translatedLanguages.includes(detectedLanguage)) {
   updateText(detectedLanguage)
