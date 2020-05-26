@@ -23,6 +23,16 @@ $(document).ready(function () {
 })
 
 function sendDataToServer(survey) {
- //send Ajax request to your web server.
- console.log('The results are:' + JSON.stringify(survey.data))
-}
+  //send Ajax request to your web server.
+  
+  console.log('The results are:' + JSON.stringify(survey.data));
+  $.ajax({
+    url: './../php/dbinput.php',
+    type: 'POST',
+    data: {
+     name: JSON.stringify(survey.data),
+     
+    }
+  })
+ }
+ 
