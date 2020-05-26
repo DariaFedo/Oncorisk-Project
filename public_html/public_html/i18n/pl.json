@@ -2,6 +2,7 @@
  "nav-main-page": "Strona główna",
  "nav-about-page": "O projekcie",
  "nav-languages": "Język",
+
  "index-header-main-text": " Wypełnij ankietę, poznaj swoje ryzyko",
  "index-start-survey-button": "Rozpocznij ankietę",
 
@@ -9,11 +10,26 @@
  "index-about-paragraph-content": "CARIBA (Cancer Risk Behavior Assessment) to innowacyjny i kompleksowy projekt dotyczący profilaktyki chorób nowotworowych, powstający w ramach prac Studenckiego Koła Naukowego „Oncos” Uniwersytetu Opolskiego. Polega na badaniu zachowań zwiększających ryzyko zachorowania oraz prowadzeniu działań edukacyjnych. Projekt w okresie pilotażowym ma mieć charakter ogólnopolski. Docelowo ma stać się projektem o zasięgu międzynarodowym. Generalnym celem projektu jest zmniejszenie zachorowalności na nowotwory złośliwe oraz poprawa w zakresie wczesnego wykrywania chorób nowotworowych w populacji światowej poprzez: promowanie wiedzy z zakresu profilaktyki onkologicznej w sposób interaktywny, przystępny i spersonalizowany zwiększenie świadomości na temat dostępnych metod leczenia i skuteczności współczesnej terapii onkologicznej analizy oceniające wiedzę na temat czynników ryzyka i sposobów zapobiegania chorobom nowotworowym w różnych kohortach respondentów umożliwienie uzyskania bezpłatnej, szybkiej i indywidualnej analizy ryzyka nowotworowego wraz z dedykowanymi zaleceniami",
  "index-counter-1": "Naszą stronę odwiedzono już",
  "index-counter-2": "razy",
- "index-partners": "partnerzy",
- "index-sponsors": "sponsorzy",
- "index-social-media": "Znajdziesz nas na:",
- "footer-problem-button": "Zgłoś problem na stronie",
 
+ "index-partners": "partnerzy",
+ "index-partner-first-title": "Mój pierwszy partner",
+ "index-partner-first-desc": "Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten zamek na którego widne były świeżo polewane. Tuż i w ulicę się jak go grzecznie, na miejscu biegało domysłów tysiące kroków zamek stał w ziemstwie i żądał.",
+ "index-partner-second-title": "Mój drugi partner",
+ "index-partner-second-desc": "Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten zamek na którego widne były świeżo polewane. Tuż i w ulicę się jak go grzecznie, na miejscu biegało domysłów tysiące kroków zamek stał w ziemstwie i żądał.",
+ "index-partner-third-title": "Mój trzeci partner",
+ "index-partner-third-desc": "Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten zamek na którego widne były świeżo polewane. Tuż i w ulicę się jak go grzecznie, na miejscu biegało domysłów tysiące kroków zamek stał w ziemstwie i żądał. ",
+
+ "index-sponsors": "sponsorzy",
+ "index-sponsor-first-title": "Mój pierwszy sponsor",
+ "index-sponsor-first-desc": "Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten zamek na którego widne były świeżo polewane. Tuż i w ulicę się jak go grzecznie, na miejscu biegało domysłów tysiące kroków zamek stał w ziemstwie i żądał.",
+ "index-sponsor-second-title": "Mój drugi sponsor",
+ "index-sponsor-second-desc": "Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten zamek na którego widne były świeżo polewane. Tuż i w ulicę się jak go grzecznie, na miejscu biegało domysłów tysiące kroków zamek stał w ziemstwie i żądał.",
+ "index-sponsor-third-title": "Mój trzeci sponsor",
+ "index-sponsor-third-desc": "Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba cenić, ten zamek na którego widne były świeżo polewane. Tuż i w ulicę się jak go grzecznie, na miejscu biegało domysłów tysiące kroków zamek stał w ziemstwie i żądał. ",
+
+ "index-social-media": "Znajdziesz nas na:",
+
+ "footer-problem-button": "Zgłoś problem na stronie",
 
  "about-project-par-header": "O Projekcie",
  "about-project-part1": "CARIBA (Cancer Risk Behavior Assessment) to innowacyjny i kompleksowy projekt dotyczący profilaktyki chorób nowotworowych, powstający w ramach  prac Studenckiego Koła Naukowego „Oncos” Uniwersytetu Opolskiego.",
@@ -24,5 +40,8 @@
  "about-list-item3": " analizy oceniające wiedzę na temat czynników ryzyka i sposobów zapobiegania chorobom nowotworowym w różnych kohortach respondentów",
  "about-list-item4": "umożliwienie uzyskania bezpłatnej, szybkiej i indywidualnej analizy ryzyka nowotworowego wraz z dedykowanymi zaleceniami",
  "about-more-info-header": "Więcej",
- "about-more-info-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+ "about-more-info-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+
+ "survey-credits": " Ankieta przygotowana na podstawie badania zamieszczonego na ",
+ "survey-credits-link": "TEJ STRONIE"
 }

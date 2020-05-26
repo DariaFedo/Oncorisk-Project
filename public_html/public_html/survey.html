@@ -19,13 +19,6 @@
  </head>
 
  <body>
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/survey-jquery"></script>
-  <!-- Js source -->
-  <script src="./../js/surveyjs.js"></script>
-
   <!-- NAVIGATION -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow">
    <div class="container">
@@ -50,12 +43,14 @@
      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-     <ul class="navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto text-center">
       <li class="nav-item">
-       <a class="nav-link" href="index.html">Strona główna</a>
+       <a class="nav-link" href="index.html" id="nav-main-page"
+        >Strona główna</a
+       >
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="about.html">O projekcie</a>
+       <a class="nav-link" href="about.html" id="nav-about-page">O projekcie</a>
       </li>
       <li class="nav-item dropdown">
        <a
@@ -69,13 +64,13 @@
         Languages
        </a>
        <div
-        class="dropdown-menu dropdown-menu-right"
+        class="dropdown-menu dropdown-menu-right text-center"
         aria-labelledby="navbarDropdownPortfolio"
        >
-        <a class="dropdown-item" href="#pl">Polski </a>
-        <a class="dropdown-item" href="#en">English</a>
-        <a class="dropdown-item" href="#de">Deutsche</a>
-        <a class="dropdown-item" href="#es">Español</a>
+        <a class="dropdown-item lang" href="#pl">Polski </a>
+        <a class="dropdown-item lang" href="#en">English</a>
+        <a class="dropdown-item lang" href="#de">Deutsche</a>
+        <a class="dropdown-item lang" href="#es">Español</a>
        </div>
       </li>
      </ul>
@@ -84,22 +79,56 @@
   </nav>
 
   <div class="container fillpage">
-   <div id="surveyContainer"></div>
+   <div id="surveyContainer" class="my-5"></div>
+  </div>
+
+  <div class="credits container d-flex my-3">
+   <span id="survey-credits">
+    Survey prepared based on reserach from
+   </span>
+   <a
+    class="btn btn-outline-primary mx-2"
+    id="survey-credits-link"
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236020/"
+   >
+   </a>
   </div>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-   <div class="container">
-    <p class="m-0 text-center text-white">
-     Copyright &copy; Uniwersytet Opolski 2020
+  <footer class="bg-dark p-2">
+   <div class="container text-center">
+    <p class="text-white">
+     Copyright &copy;
+     <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
     </p>
     <a
      href="pageticket.html"
-     class="btn btn-outline-danger float-xs-none float-right"
+     class="mx-auto btn btn-secondary btn-sm my-1"
+     id="footer-problem-button"
     >
-     Zgłoś problem na stronie
     </a>
    </div>
   </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!--jQuery i18n Javascript-->
+  <script src="../vendor/i18n/jquery.i18n.js"></script>
+  <script src="../vendor/i18n/jquery.i18n.messagestore.js"></script>
+  <script src="../vendor/i18n/jquery.i18n.fallbacks.js"></script>
+  <script src="../vendor/i18n/jquery.i18n.parser.js"></script>
+  <script src="../vendor/i18n/jquery.i18n.emitter.js"></script>
+  <script src="../vendor/i18n/jquery.i18n.language.js"></script>
+  <script src="../vendor/i18n/languages/he.js"></script>
+  <script src="../vendor/i18n/languages/fi.js"></script>
+  <script src="../vendor/i18n/languages/ml.js"></script>
+  <script src="../vendor/i18n/CLDRPluralRuleParser.js"></script>
+
+  <!-- Survey engine-->
+  <script src="https://unpkg.com/survey-jquery"></script>
+  <!-- Page JS -->
+  <script src="./../js/surveyjs.js"></script>
  </body>
 </html>
