@@ -16,6 +16,12 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/survey.css" />
+  <link rel="icon" href="favico.png" sizes="any" type="image/png" />
+  <!--Font Awesome Icons-->
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
  </head>
 
  <body>
@@ -78,8 +84,11 @@
    </div>
   </nav>
 
-  <div class="container fillpage">
-   <div id="surveyContainer" class="my-5"></div>
+  <div class="container my-5 d-lg-flex">
+   <div id="surveyContainer"></div>
+   <div id="surveyPrompts" class="text-center py-3">
+    Tutaj będą promptsy do odpowiadanych pytań
+   </div>
   </div>
 
   <div class="credits container d-flex my-3">
@@ -87,7 +96,7 @@
     Survey prepared based on reserach from
    </span>
    <a
-    class="btn btn-outline-primary mx-2"
+    class="mx-2"
     id="survey-credits-link"
     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236020/"
    >
@@ -96,17 +105,30 @@
 
   <!-- Footer -->
   <footer class="bg-dark p-2">
-   <div class="container text-center">
-    <p class="text-white">
-     Copyright &copy;
-     <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
-    </p>
-    <a
-     href="pageticket.html"
-     class="mx-auto btn btn-secondary btn-sm my-1"
-     id="footer-problem-button"
-    >
-    </a>
+   <div class="container d-lg-flex">
+    <!--SocialMedia-->
+    <div class="container text-center">
+     <p id="footer-where-to-find" class="text-white">
+      Znajdziesz nas na
+     </p>
+     <a href="#" class="p-3 fa fa-facebook"></a>
+     <a href="#" class="p-3 fa fa-instagram"></a>
+     <a href="#" class="p-3 fa fa-twitter"></a>
+     <a href="#" class="p-3 fa fa-youtube"></a>
+    </div>
+    <!--Copyrights-->
+    <div class="container d-flex my-3 justify-content-around">
+     <span class="text-white my-auto">
+      Copyright &copy;
+      <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
+     </span>
+     <a
+      href="pageticket.html"
+      class="mx-lg-2 btn btn-secondary btn-sm my-auto"
+      id="footer-problem-button"
+     >
+     </a>
+    </div>
    </div>
   </footer>
 

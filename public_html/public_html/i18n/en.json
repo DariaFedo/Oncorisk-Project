@@ -2,7 +2,9 @@
  "nav-main-page": "Main",
  "nav-about-page": "About Project",
  "nav-languages": "Language",
+
  "footer-problem-button": "Report the problem",
+ "footer-where-to-find": "Find us at:",
 
  "index-header-main-text": "Know your risk, fill survey",
  "index-start-survey-button": "Start survey",
@@ -42,5 +44,7 @@
  "about-more-info-text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 
  "survey-credits": " Survey prepared based on reserach from ",
- "survey-credits-link": "THIS SITE"
+ "survey-credits-link": "THIS SITE",
+
+ "404-page-message": "There is no such page, return to main page"
 }

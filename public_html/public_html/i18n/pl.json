@@ -3,6 +3,9 @@
  "nav-about-page": "O projekcie",
  "nav-languages": "Język",
 
+ "footer-problem-button": "Zgłoś problem na stronie",
+ "footer-where-to-find": "Znajdź nas na:",
+
  "index-header-main-text": " Wypełnij ankietę, poznaj swoje ryzyko",
  "index-start-survey-button": "Rozpocznij ankietę",
 
@@ -29,8 +32,6 @@
 
  "index-social-media": "Znajdziesz nas na:",
 
- "footer-problem-button": "Zgłoś problem na stronie",
-
  "about-project-par-header": "O Projekcie",
  "about-project-part1": "CARIBA (Cancer Risk Behavior Assessment) to innowacyjny i kompleksowy projekt dotyczący profilaktyki chorób nowotworowych, powstający w ramach  prac Studenckiego Koła Naukowego „Oncos” Uniwersytetu Opolskiego.",
  "about-project-part2": "Polega na badaniu zachowań zwiększających ryzyko zachorowania oraz prowadzeniu działań edukacyjnych. Projekt w okresie pilotażowym ma mieć charakter ogólnopolski",
@@ -43,5 +44,7 @@
  "about-more-info-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
 
  "survey-credits": " Ankieta przygotowana na podstawie badania zamieszczonego na ",
- "survey-credits-link": "TEJ STRONIE"
+ "survey-credits-link": "TEJ STRONIE",
+
+ "404-page-message": "Nie znaleziono strony o podanym adresie, wróć na stronę główną"
 }

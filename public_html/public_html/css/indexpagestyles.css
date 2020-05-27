@@ -22,17 +22,6 @@ a:hover {
  left: 5%;
 }
 
-.wavebackground-container {
- background-image: url(../Assets/WaveFootegbackground.svg);
- background-size: cover;
-}
-.wavebackground-content {
- width: 100%;
- margin: auto;
- padding: 3em 0.5em;
- background-color: lightgray;
-}
-
 .person {
  margin: 0 auto;
  width: 100px;
@@ -42,20 +31,24 @@ a:hover {
 }
 
 .partner-container {
- max-width: 500px;
+ max-width: 100%;
  background-color: #eee;
  padding: 1em;
  border-radius: 5%;
-}
-
-.btn {
- background-color: #67d2df;
 }
 
 #sponsors {
  padding-top: 2em;
 }
 
+@media (min-width: 768px) {
+ .partner-container {
+  max-width: 48%;
+ }
+ .mycontainer {
+  top: 35%;
+ }
+}
 @media (min-width: 992px) {
  .mediascaling {
   font-size: 35pt;
@@ -66,9 +59,10 @@ a:hover {
  .wavebackground-content {
   padding: 3em 1em;
  }
-}
-@media (min-width: 768px) {
- .mycontainer {
-  top: 35%;
+ #start-survey-button {
+  font-size: 20pt;
+ }
+ .partner-container {
+  max-width: 32%;
  }
 }

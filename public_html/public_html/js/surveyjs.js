@@ -1,4 +1,5 @@
 const translatedLanguages = ['en', 'pl']
+
 Survey.StylesManager.applyTheme('bootstrap')
 
 $(document).ready(function () {
@@ -12,25 +13,38 @@ $(document).ready(function () {
    $('#surveyContainer').Survey({
     model: survey,
     onComplete: sendDataToServer,
+    onCurrentPageChanged: SurveyPageChanged,
    })
   })
   .then((data) => {
    console.log('Success:')
+   getSurveyfromServer()
   })
   .catch((error) => {
    console.error('Error:')
   })
 })
 
+const SurveyPageChanged = (survey) => {
+ console.log(survey.visiblePages)
+}
+
 function sendDataToServer(survey) {
  console.log('The results are:' + JSON.stringify(survey.data))
  //send Ajax request to your web server.
  $.ajax({
-  url: './../php/dbinput.php',
+  url: './php/POSTresultstodb.php',
   type: 'POST',
   data: {
-   name: JSON.stringify(survey.data),
+   surveyresults: JSON.stringify(survey.data),
   },
+ })
+}
+
+function getSurveyfromServer() {
+ console.log('Wchodze')
+ $.get('./php/GETsurveyfromdb.php', function (data, status) {
+  console.log('Data: ' + data + '\nStatus: ' + status)
  })
 }
 

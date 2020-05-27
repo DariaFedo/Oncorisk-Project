@@ -18,6 +18,11 @@
   <link href="css/modern-business.css" rel="stylesheet" />
   <link href="css/indexpagestyles.css" rel="stylesheet" />
   <link rel="icon" href="favico.png" sizes="any" type="image/png" />
+    <!--Font Awesome Icons-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   />
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167139559-1"></script>
@@ -147,8 +152,7 @@
       class="text-uppercase text-light text-center font-weight-bolder mediascaling"
       id="header-main-text"
      ></h1>
-     <a href="survey.html" class="my-3 btn btn-large">
-      <h3 class="text-light" id="start-survey-button"></h3>
+     <a href="survey.html" id="start-survey-button" class="display-1 text-light btn-primary my-3 btn btn-large">
      </a>
     </div>
    </div>
@@ -183,10 +187,10 @@
    </div>
   </div>
 
-   <div class="wavebackground-content my-5">
+   <div class="bg-light my-5 p-4">
     <h1 id="partners" class="text-uppercase text-center">Partnerzy</h1>
 
-    <div class="mx-auto d-lg-flex justify-content-around">
+    <div class="mx-auto d-md-flex flex-wrap justify-content-around">
     <!-- FirstCard -->
      <div class="partner-container my-2 mx-auto">
       <div class="partner-card">
@@ -236,7 +240,7 @@
   
     <h1 id="sponsors" class="text-uppercase text-center">Sponsorzy</h1>
 
-    <div class="mx-auto d-lg-flex justify-content-around">
+    <div class="mx-auto d-md-flex flex-wrap justify-content-around">
     <!-- FirstCard -->
      <div class="partner-container my-2 mx-auto">
       <div class="partner-card">
@@ -290,19 +294,32 @@
 
   <!-- Footer -->
   <footer class="bg-dark p-2">
-   <div class="container text-center">
-    <p class="text-white">
-     Copyright &copy;
-     <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
-    </p>
-    <a
-     href="pageticket.html"
-     class="mx-auto btn btn-secondary btn-sm my-1"
-     id="footer-problem-button"
-    >
-    </a>
-   </div>
-  </footer>
+    <div class="container d-lg-flex">
+     <!--SocialMedia-->
+     <div class="container text-center">
+      <p id="footer-where-to-find" class="text-white my-auto">
+       Znajdziesz nas na
+      </p>
+      <a href="#" class="p-3 fa fa-facebook"></a>
+      <a href="#" class="p-3 fa fa-instagram"></a>
+      <a href="#" class="p-3 fa fa-twitter"></a>
+      <a href="#" class="p-3 fa fa-youtube"></a>
+     </div>
+     <!--Copyrights-->
+     <div class="container d-flex my-3 justify-content-around">
+      <span class="text-white my-auto">
+       Copyright &copy;
+       <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
+      </span>
+      <a
+       href="pageticket.html"
+       class="mx-lg-2 btn btn-secondary btn-sm my-auto"
+       id="footer-problem-button"
+      >
+      </a>
+     </div>
+    </div>
+   </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
