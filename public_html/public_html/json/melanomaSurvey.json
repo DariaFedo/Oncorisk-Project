@@ -1009,8 +1009,6 @@
    }
   }
  ],
- "navigateToUrl": "/surveyend.html",
- "navigateToUrlOnCondition": [{}],
  "showQuestionNumbers": "off",
  "showProgressBar": "bottom",
  "maxTextLength": 255,

@@ -23,21 +23,15 @@ $(document).ready(function () {
 })
 
 function sendDataToServer(survey) {
-  //send Ajax request to your web server.
-  
-  console.log('The results are:' + JSON.stringify(survey.data));
-  $.ajax({
-    url: './../php/dbinput.php',
-    type: 'POST',
-    data: {
-     name: JSON.stringify(survey.data),
-     
-    }
-  })
- }
- 
- //send Ajax request to your web server.
  console.log('The results are:' + JSON.stringify(survey.data))
+ //send Ajax request to your web server.
+ $.ajax({
+  url: './../php/dbinput.php',
+  type: 'POST',
+  data: {
+   name: JSON.stringify(survey.data),
+  },
+ })
 }
 
 function updateText(language) {
@@ -67,9 +61,9 @@ function LanguageOnHashChange() {
 
 const LanguageOnLoad = () => {
  const detectedLanguage = navigator.language.slice(0, 2)
- console.log('Detected ' + detectedLanguage)
- console.log('navigator.language ' + navigator.language)
- console.log('navigator.userLanguage ' + navigator.userLanguage)
+ //console.log('Detected ' + detectedLanguage)
+ //console.log('navigator.language ' + navigator.language)
+ //console.log('navigator.userLanguage ' + navigator.userLanguage)
 
  if (translatedLanguages.includes(detectedLanguage)) {
   updateText(detectedLanguage)
