@@ -1,86 +1,77 @@
-a {
- cursor: pointer;
- color: white;
-}
-
-a:hover {
- color: white;
-}
-
 .carousel-control-prev {
- max-width: 5%;
+  max-width: 5%;
 }
 
 .carousel-control-next {
- max-width: 5%;
+  max-width: 5%;
 }
 
 .mycontainer {
- position: absolute;
- width: 90%;
- top: 20vh;
- left: 5%;
+  position: absolute;
+  width: 90%;
+  top: 20vh;
+  left: 5%;
 }
 
 .person {
- margin: 0 auto;
- width: 100px;
- height: 90px;
- background-color: #e48f92;
- border-radius: 20%;
+  margin: 0 auto;
+  width: 100px;
+  height: 90px;
+  background-color: #e48f92;
+  border-radius: 20%;
 }
 
 .partner-container {
- max-width: 100%;
- background-color: #eee;
- padding: 1em;
- border-radius: 5%;
+  max-width: 100%;
+  background-color: #eee;
+  padding: 1em;
+  border-radius: 5%;
 }
 
 #sponsors {
- padding-top: 2em;
+  padding-top: 2em;
 }
 
 body {
- padding-top: 6vh;
+  padding-top: 6vh;
 }
 
 .carousel-item {
- height: 94vh;
- min-height: 300px;
- background: no-repeat center center scroll;
- -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
+  height: 94vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .portfolio-item {
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
- .partner-container {
-  max-width: 48%;
- }
- .mycontainer {
-  top: 35%;
- }
+  .partner-container {
+    max-width: 48%;
+  }
+  .mycontainer {
+    top: 35%;
+  }
 }
 @media (min-width: 992px) {
- .mediascaling {
-  font-size: 35pt;
- }
- .mycontainer {
-  top: 35%;
- }
- .wavebackground-content {
-  padding: 3em 1em;
- }
- #start-survey-button {
-  font-size: 20pt;
- }
- .partner-container {
-  max-width: 32%;
- }
+  .mediascaling {
+    font-size: 35pt;
+  }
+  .mycontainer {
+    top: 35%;
+  }
+  .wavebackground-content {
+    padding: 3em 1em;
+  }
+  #start-survey-button {
+    font-size: 20pt;
+  }
+  .partner-container {
+    max-width: 32%;
+  }
 }

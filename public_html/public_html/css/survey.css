@@ -1,29 +1,16 @@
-body {
- padding-top: 6vh;
-}
-a {
- cursor: pointer;
-}
-.fa {
- color: white;
-}
-a:hover {
- color: white;
-}
-
 #survey-facts {
- background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 #survey-fact-header {
- border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
- padding: 1.225rem 1.25rem;
- border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  padding: 1.225rem 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 @media (min-width: 992px) {
- #surveyContainer {
-  min-width: 70%;
- }
- #survey-facts {
-  max-width: 30%;
- }
+  #surveyContainer {
+    min-width: 70%;
+  }
+  #survey-facts {
+    max-width: 30%;
+  }
 }

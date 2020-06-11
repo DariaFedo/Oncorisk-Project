@@ -1,99 +1,11 @@
-<!DOCTYPE html>
-<html lang="pl">
- <head>
-  <meta charset="utf-8" />
-  <meta
-   name="viewport"
-   content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Oncorisk</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
+<?php include 'phpcomponents/head.php'?>
   <!-- Custom styles for this template -->
   <link href="css/indexpagestyles.css" rel="stylesheet" />
-  <link rel="icon" href="favico.png" sizes="any" type="image/png" />
-    <!--Font Awesome Icons-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-   />
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167139559-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-167139559-1');
-</script>
-
  </head>
 
  <body>
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow">
-   <div class="container">
-    <a class="navbar-brand" href="index.html">
-     <img
-      src="./Assets/navbarlogo.svg"
-      width="100"
-      height="50"
-      class="d-inline-block align-top"
-      alt=""
-     />
-    </a>
-    <button
-     class="navbar-toggler navbar-toggler-right"
-     type="button"
-     data-toggle="collapse"
-     data-target="#navbarResponsive"
-     aria-controls="navbarResponsive"
-     aria-expanded="false"
-     aria-label="Toggle navigation"
-    >
-     <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-     <ul class="navbar-nav ml-auto text-center">
-      <li class="nav-item">
-       <a class="nav-link" href="index.html" id="nav-main-page"
-        >Strona główna</a
-       >
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="about.html" id="nav-about-page">O projekcie</a>
-      </li>
-      <li class="nav-item dropdown">
-       <a
-        class="nav-link dropdown-toggle"
-        href="#"
-        id="navbarDropdownPortfolio"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-       >
-        Languages
-       </a>
-       <div
-        class="dropdown-menu dropdown-menu-right text-center"
-        aria-labelledby="navbarDropdownPortfolio"
-       >
-        <a class="dropdown-item lang" href="#pl">Polski </a>
-        <a class="dropdown-item lang" href="#en">English</a>
-        <a class="dropdown-item lang" href="#de">Deutsche</a>
-        <a class="dropdown-item lang" href="#es">Español</a>
-       </div>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </nav>
+  <?php include "phpcomponents/navbar.php"?>
 
   <header>
    <div
@@ -151,7 +63,7 @@
       class="text-uppercase text-light text-center font-weight-bolder mediascaling"
       id="header-main-text"
      ></h1>
-     <a href="survey.html" id="start-survey-button" class="display-1 text-light btn-primary my-3 btn btn-large">
+     <a href="survey.php" id="start-survey-button" class="display-1 text-light btn-primary my-3 btn btn-large">
      </a>
     </div>
    </div>
@@ -236,7 +148,7 @@
       </p>
      </div>
     </div>
-  
+
     <h1 id="sponsors" class="text-uppercase text-center">Sponsorzy</h1>
 
     <div class="mx-auto d-md-flex flex-wrap justify-content-around">
@@ -292,73 +204,16 @@
   </div>
 
     <!-- Footer -->
-    <footer class="bg-dark p-2">
-      <div class="container d-lg-flex">
-       <!--SocialMedia-->
-       <div class="container text-center">
-        <p id="footer-where-to-find" class="text-white my-auto">
-         Znajdziesz nas na
-        </p>
-        <a href="#" class="p-3 fa fa-facebook"></a>
-        <a href="#" class="p-3 fa fa-instagram"></a>
-        <a href="#" class="p-3 fa fa-twitter"></a>
-        <a href="#" class="p-3 fa fa-youtube"></a>
-       </div>
-       <!--Copyrights-->
-       <div class="container d-flex my-3 justify-content-around">
-        <span class="text-white my-auto">
-         Copyright &copy;
-         <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
-        </span>
-        <a
-         href="contact.html"
-         class="mx-lg-2 btn btn-secondary btn-sm my-auto"
-         id="footer-contact-button"
-        >
-        </a>
-       </div>
-      </div>
-     </footer>
+    <?php include 'phpcomponents/footer.php'?>
 
-  <!--Cookie-->
-  <div class="modal fade" id="cookie-consent-container">
-    <div class="modal-dialog modal-dialog-centered " role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="cookie-title"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-       
-        <div class="modal-body" id="cookie-desc"></div>
-        <div class="modal-footer">
-          <a class="text-primary" id="cookie-link" href="./privacypolicy.html"></a>
-          <button class="btn btn-primary" data-dismiss="modal" id="cookie-button"></button>
-        </div>
-  </div>
-  </div>
-   </div>
+    <!-- Cookie -->
+    <?php include 'phpcomponents/cookie.php'?>
 
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!--jQuery i18n Javascript-->
-  <script src="../vendor/i18n/jquery.i18n.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.messagestore.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.fallbacks.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.parser.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.emitter.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.language.js"></script>
-  <script src="../vendor/i18n/languages/he.js"></script>
-  <script src="../vendor/i18n/languages/fi.js"></script>
-  <script src="../vendor/i18n/languages/ml.js"></script>
-  <script src="../vendor/i18n/CLDRPluralRuleParser.js"></script>
+    <!--jQuery i18n Javascript-->
+    <?php include 'phpcomponents/i18njsliblaries.php'?>
 
   <!--Page JavaScript-->
   <script src="js/index.js"></script>
- 
+
  </body>
 </html>

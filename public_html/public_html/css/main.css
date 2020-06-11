@@ -1,0 +1,13 @@
+body {
+  padding-top: 10vh;
+}
+a {
+  cursor: pointer;
+  color: white;
+}
+.fa {
+  color: white;
+}
+a:hover {
+  color: white;
+}

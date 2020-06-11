@@ -1,27 +1,14 @@
-body {
- padding-top: 6vh;
-}
-
-a {
- cursor: pointer;
- color: white;
-}
-
-a:hover {
- color: white;
-}
-
 input[type='text'],
 select,
 textarea {
- width: 100%; /* Full width */
- border-radius: 4px; /* Rounded borders */
+  width: 100%; /* Full width */
+  border-radius: 4px; /* Rounded borders */
 
- margin-top: 6px; /* Add a top margin */
- margin-bottom: 16px; /* Bottom margin */
- resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 .fillpage {
- height: 86vh;
+  height: 86vh;
 }

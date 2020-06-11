@@ -1,90 +1,9 @@
-<!DOCTYPE html>
-<html lang="pl">
- <head>
-  <meta charset="utf-8" />
-  <meta
-   name="viewport"
-   content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Oncorisk</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/privacypolicypagestyles.css" rel="stylesheet" />
-  <link rel="icon" href="favico.png" sizes="any" type="image/png" />
-  <!--Font Awesome Icons-->
-  <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+<?php include 'phpcomponents/head.php'?>
  </head>
 
  <body>
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow">
-   <div class="container">
-    <a class="navbar-brand" href="index.html">
-     <img
-      src="./Assets/navbarlogo.svg"
-      width="100"
-      height="50"
-      class="d-inline-block align-top"
-      alt=""
-     />
-    </a>
-    <button
-     class="navbar-toggler navbar-toggler-right"
-     type="button"
-     data-toggle="collapse"
-     data-target="#navbarResponsive"
-     aria-controls="navbarResponsive"
-     aria-expanded="false"
-     aria-label="Toggle navigation"
-    >
-     <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-     <ul class="navbar-nav ml-auto text-center">
-      <li class="nav-item">
-       <a class="nav-link" href="index.html" id="nav-main-page"
-        >Strona główna</a
-       >
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="about.html" id="nav-about-page">O projekcie</a>
-      </li>
-      <li class="nav-item dropdown">
-       <a
-        class="nav-link dropdown-toggle"
-        href="#"
-        id="navbarDropdownPortfolio"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-       >
-        Languages
-       </a>
-       <div
-        class="dropdown-menu dropdown-menu-right text-center"
-        aria-labelledby="navbarDropdownPortfolio"
-       >
-        <a class="dropdown-item lang" href="#pl">Polski </a>
-        <a class="dropdown-item lang" href="#en">English</a>
-        <a class="dropdown-item lang" href="#de">Deutsche</a>
-        <a class="dropdown-item lang" href="#es">Español</a>
-       </div>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </nav>
-
-  <header></header>
+  <?php include "phpcomponents/navbar.php"?>
 
   <!-- Page Content -->
   <div class="container">
@@ -306,50 +225,14 @@
    </p>
   </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark p-2">
-   <div class="container d-lg-flex">
-    <!--SocialMedia-->
-    <div class="container text-center">
-     <p id="footer-where-to-find" class="text-white my-auto">
-      Znajdziesz nas na
-     </p>
-     <a href="#" class="p-3 fa fa-facebook"></a>
-     <a href="#" class="p-3 fa fa-instagram"></a>
-     <a href="#" class="p-3 fa fa-twitter"></a>
-     <a href="#" class="p-3 fa fa-youtube"></a>
-    </div>
-    <!--Copyrights-->
-    <div class="container d-flex my-3 justify-content-around">
-     <span class="text-white my-auto">
-      Copyright &copy;
-      <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
-     </span>
-     <a
-      href="contact.html"
-      class="mx-lg-2 btn btn-secondary btn-sm my-auto"
-      id="footer-contact-button"
-     >
-     </a>
-    </div>
-   </div>
-  </footer>
+     <!-- Footer -->
+     <?php include 'phpcomponents/footer.php'?>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+         <!-- Cookie -->
+    <?php include 'phpcomponents/cookie.php'?>
 
-  <!--jQuery i18n Javascript-->
-  <script src="../vendor/i18n/jquery.i18n.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.messagestore.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.fallbacks.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.parser.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.emitter.js"></script>
-  <script src="../vendor/i18n/jquery.i18n.language.js"></script>
-  <script src="../vendor/i18n/languages/he.js"></script>
-  <script src="../vendor/i18n/languages/fi.js"></script>
-  <script src="../vendor/i18n/languages/ml.js"></script>
-  <script src="../vendor/i18n/CLDRPluralRuleParser.js"></script>
+    <!--jQuery i18n Javascript-->
+    <?php include 'phpcomponents/i18njsliblaries.php'?>
 
   <!--Page JavaScript-->
   <script src="js/privacypolicy.js"></script>
