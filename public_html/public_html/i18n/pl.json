@@ -3,16 +3,21 @@
  "nav-about-page": "O projekcie",
  "nav-languages": "Język",
 
- "footer-problem-button": "Zgłoś problem na stronie",
+ "footer-contact-button": "Napisz do nas",
  "footer-where-to-find": "Znajdź nas na:",
+
+ "cookie-title": "Zgoda na korzystanie z ciasteczek",
+ "cookie-desc": "Przeglądając tę stronę, zgadasz się na politykę cookies",
+ "cookie-link": "Po co nam ciasteczka?",
+ "cookie-button": "Zrozumiałem",
 
  "index-header-main-text": " Wypełnij ankietę, poznaj swoje ryzyko",
  "index-start-survey-button": "Rozpocznij ankietę",
 
  "index-about-paragraph-header": "O projekcie",
  "index-about-paragraph-content": "CARIBA (Cancer Risk Behavior Assessment) to innowacyjny i kompleksowy projekt dotyczący profilaktyki chorób nowotworowych, powstający w ramach prac Studenckiego Koła Naukowego „Oncos” Uniwersytetu Opolskiego. Polega na badaniu zachowań zwiększających ryzyko zachorowania oraz prowadzeniu działań edukacyjnych. Projekt w okresie pilotażowym ma mieć charakter ogólnopolski. Docelowo ma stać się projektem o zasięgu międzynarodowym. Generalnym celem projektu jest zmniejszenie zachorowalności na nowotwory złośliwe oraz poprawa w zakresie wczesnego wykrywania chorób nowotworowych w populacji światowej poprzez: promowanie wiedzy z zakresu profilaktyki onkologicznej w sposób interaktywny, przystępny i spersonalizowany zwiększenie świadomości na temat dostępnych metod leczenia i skuteczności współczesnej terapii onkologicznej analizy oceniające wiedzę na temat czynników ryzyka i sposobów zapobiegania chorobom nowotworowym w różnych kohortach respondentów umożliwienie uzyskania bezpłatnej, szybkiej i indywidualnej analizy ryzyka nowotworowego wraz z dedykowanymi zaleceniami",
- "index-counter-1": "Naszą stronę odwiedzono już",
- "index-counter-2": "razy",
+ "index-counter-1": "Naszą stronę odwiedziło już",
+ "index-counter-2": "osób",
 
  "index-partners": "partnerzy",
  "index-partner-first-title": "Mój pierwszy partner",
@@ -43,8 +48,13 @@
  "about-more-info-header": "Więcej",
  "about-more-info-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
 
+ "survey-fact-header": "Ciekawostka",
  "survey-credits": " Ankieta przygotowana na podstawie badania zamieszczonego na ",
  "survey-credits-link": "TEJ STRONIE",
+
+ "contact-email-header": "Twój email",
+ "contact-email-desc": "Wiadomość",
+ "contact-send-button": "Wyślij",
 
  "404-page-message": "Nie znaleziono strony o podanym adresie, wróć na stronę główną"
 }

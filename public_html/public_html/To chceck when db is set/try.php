@@ -27,56 +27,70 @@
  </head>
 
  <body>
-  <?php 
-session_start();
-$_SESSION['session']=session_id();
 
-//connection to db
-require_once('inc/db.php');
 
-function total_online()
-{
-$current_time=time();
-$timeout = $current_time - (60); 
-$session_exist = "Select session from visitors WHERE session='".$_SESSION['session']."'";
-$session_check = mysqli_num_rows($session_exist);
- if($session_exist==0 && $_SESSION['session']!="")
-{
-$query ="Insert into visitors(id,session,time) values('','".$_SESSION['session']."', '".$current_time."'"; 
-}
-else
-{
-$sql="UPDATE visitor SET time='".time()."' WHERE session='".$_SESSION['session']."'";
-}
-
-$select_total ="Select * from visitors WHERE time>= '$timeout'";
-  $total_online_visitors = mysqli_num_rows($select_total); return
-  $total_online_visitors; } if(isset($_POST['get_online_visitor'])) {
-  $total_online = total_online(); echo $total_online; exit(); } ?>
 
   <?php
+//connection to db
+include_once '.././../db.php';
+session_start();
+
+$_SESSION['session'] = session_id();
+
+if (isset($_POST['get_online_visitor'])) {
+    $total_online = total_online($mysqli);
+
+    exit();}
+
+function total_online($mysqli)
+{
+    $current_time = time();
+    $timeout = $current_time - (300);
+    $session_exist_query = "SELECT session FROM visitors WHERE session='" . $_SESSION['session'] . "'";
+
+    $session_exist = $mysqli->query($session_exist_query);
+    $session_check = mysqli_num_rows($session_exist);
+
+    if ($session_check == 0 && $_SESSION['session'] != "") {
+        $query = "INSERT INTO visitors (id,session,time) VALUES (null, '" . $_SESSION['session'] . "','" . $current_time . "')";
+        $mysqli->query($query);
+    } else {
+        $sql = "UPDATE visitors SET time='" . time() . "' WHERE session='" . $_SESSION['session'] . "'";
+        $mysqli->query($sql);
+    }
+
+    $select_total_query = "SELECT * FROM visitors WHERE time>= $timeout";
+    $select_total = $mysqli->query($select_total_query);
+    $total_online_visitors = mysqli_num_rows($select_total);
+    return $total_online_visitors;
+}
+
 //To get total online visitors
-$total_online_visitors = total_online();
+$total_online_visitors = total_online($mysqli);
 
 //To get total visitors
-$total_visitors = "Select * from visitors";
+$total_visitors_query = "Select * from visitors";
+$total_visitors = $mysqli->query($total_visitors_query);
 $total_visitors = mysqli_num_rows($total_visitors);
 
 //To inset page view and select total pageview
-$user_ips = $_SERVER['REMOVE_ADDR'];
-$page =$_SERVER['PHP_SELF'];
-$query = "INSERT into pageviews(id,page,ip) values(null,'$page','$user_ips'";
-$pageviews = "Select * from pageviews";
+$user_ips = $_SERVER['REMOTE_ADDR'];
+$page = $_SERVER['PHP_SELF'];
+$query = "INSERT INTO pageviews(id,page,ip) VALUES (null,'$page','$user_ips')";
+$mysqli->query($query);
+
+$pageviews_query = "Select * from pageviews";
+$pageviews = $mysqli->query($pageviews_query);
 $total_pageviews = mysqli_num_rows($pageviews);
 
 ?>
 
-  <?php echo $total_visitors;  ?>
+  <?php echo $total_visitors; ?>
   <br />
   <br />
-  <?php echo $total_online_visitors;  ?>
+  <?php echo $total_online_visitors; ?>
   <br />
   <br />
-  <?php echo $total_pageviews;  ?>
+  <?php echo $total_pageviews; ?>
  </body>
 </html>

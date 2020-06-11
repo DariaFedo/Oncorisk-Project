@@ -1,4 +1,16 @@
-/* Style inputs with type="text", select elements and textareas */
+body {
+ padding-top: 6vh;
+}
+
+a {
+ cursor: pointer;
+ color: white;
+}
+
+a:hover {
+ color: white;
+}
+
 input[type='text'],
 select,
 textarea {

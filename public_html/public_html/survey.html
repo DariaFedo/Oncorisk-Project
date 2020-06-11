@@ -9,12 +9,12 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Badanie</title>
+  <title>Survey</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="css/modern-business.css" rel="stylesheet" />
+
   <link rel="stylesheet" type="text/css" href="css/survey.css" />
   <link rel="icon" href="favico.png" sizes="any" type="image/png" />
   <!--Font Awesome Icons-->
@@ -51,12 +51,10 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
      <ul class="navbar-nav ml-auto text-center">
       <li class="nav-item">
-       <a class="nav-link" href="index.html" id="nav-main-page"
-        >Strona główna</a
-       >
+       <a class="nav-link" href="index.html" id="nav-main-page"></a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="about.html" id="nav-about-page">O projekcie</a>
+       <a class="nav-link" href="about.html" id="nav-about-page"></a>
       </li>
       <li class="nav-item dropdown">
        <a
@@ -85,9 +83,10 @@
   </nav>
 
   <div class="container my-5 d-lg-flex">
-   <div id="surveyContainer"></div>
-   <div id="surveyPrompts" class="text-center py-3">
-    Tutaj będą promptsy do odpowiadanych pytań
+   <div id="surveyContainer" class="px-3"></div>
+   <div id="survey-facts">
+    <h3 class="factheader text-center" id="survey-fact-header"></h3>
+    <p class="p-2 text-justify" id="survey-fact-desc"></p>
    </div>
   </div>
 
@@ -96,7 +95,7 @@
     Survey prepared based on reserach from
    </span>
    <a
-    class="mx-2"
+    class="mx-3"
     id="survey-credits-link"
     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236020/"
    >
@@ -108,7 +107,7 @@
    <div class="container d-lg-flex">
     <!--SocialMedia-->
     <div class="container text-center">
-     <p id="footer-where-to-find" class="text-white">
+     <p id="footer-where-to-find" class="text-white my-auto">
       Znajdziesz nas na
      </p>
      <a href="#" class="p-3 fa fa-facebook"></a>
@@ -123,9 +122,9 @@
       <a href="https://www.uni.opole.pl">Uniwersytet Opolski 2020</a>
      </span>
      <a
-      href="pageticket.html"
+      href="contact.html"
       class="mx-lg-2 btn btn-secondary btn-sm my-auto"
-      id="footer-problem-button"
+      id="footer-contact-button"
      >
      </a>
     </div>

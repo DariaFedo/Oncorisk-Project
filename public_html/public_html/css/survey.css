@@ -1,3 +1,6 @@
+body {
+ padding-top: 6vh;
+}
 a {
  cursor: pointer;
 }
@@ -7,41 +10,20 @@ a {
 a:hover {
  color: white;
 }
-/* .fa {
- padding: 20px;
- font-size: 30px;
 
- text-align: center;
- text-decoration: none;
-}
-.fa-facebook {
- background: #3b5998;
- color: white;
-}
-
-.fa-twitter {
- background: #55acee;
- color: white;
-}
-.fa-youtube {
- background: #bb0000;
- color: white;
-}
-
-.fa-instagram {
- background: #125688;
- color: white;
-}  */
-
-#surveyPrompts {
+#survey-facts {
  background-color: rgba(0, 0, 0, 0.03);
- width: 100%;
+}
+#survey-fact-header {
+ border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+ padding: 1.225rem 1.25rem;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 @media (min-width: 992px) {
  #surveyContainer {
-  width: 70%;
+  min-width: 70%;
  }
- #surveyPrompts {
-  width: 30%;
+ #survey-facts {
+  max-width: 30%;
  }
 }

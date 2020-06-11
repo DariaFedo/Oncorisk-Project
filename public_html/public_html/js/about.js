@@ -16,7 +16,7 @@ function updateText(language) {
   $('#about-list-item4').text($.i18n('about-list-item4'))
   $('#more-info-header').text($.i18n('about-more-info-header'))
   $('#about-more-info-text').text($.i18n('about-more-info-text'))
-  $('#footer-problem-button').text($.i18n('footer-problem-button'))
+  $('#footer-contact-button').text($.i18n('footer-contact-button'))
   $('#footer-where-to-find').text($.i18n('footer-where-to-find'))
  })
 }

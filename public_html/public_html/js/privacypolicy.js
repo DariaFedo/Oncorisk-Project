@@ -36,8 +36,6 @@ function updateText() {
   $('#nav-main-page').text($.i18n('nav-main-page'))
   $('#nav-about-page').text($.i18n('nav-about-page'))
 
-  $('#message').text($.i18n('404-page-message'))
-
   $('#social-media').text($.i18n('index-social-media'))
   $('#footer-where-to-find').text($.i18n('footer-where-to-find'))
   $('#footer-contact-button').text($.i18n('footer-contact-button'))

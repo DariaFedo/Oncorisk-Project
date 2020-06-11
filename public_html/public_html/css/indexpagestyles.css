@@ -41,6 +41,24 @@ a:hover {
  padding-top: 2em;
 }
 
+body {
+ padding-top: 6vh;
+}
+
+.carousel-item {
+ height: 94vh;
+ min-height: 300px;
+ background: no-repeat center center scroll;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.portfolio-item {
+ margin-bottom: 30px;
+}
+
 @media (min-width: 768px) {
  .partner-container {
   max-width: 48%;
@@ -54,7 +72,7 @@ a:hover {
   font-size: 35pt;
  }
  .mycontainer {
-  top: 20%;
+  top: 35%;
  }
  .wavebackground-content {
   padding: 3em 1em;
