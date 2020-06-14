@@ -1,314 +1,317 @@
 {
- "RespondentGender": {
-  "male": {
-   "en": "English Man die because of Melanoma",
-   "pl": "Nawet Twardy Polski facet nie oprze się czerniakowi"
+  "RespondentGender": {
+    "male": {
+      "en": "Remember, men have a better chance of getting melanoma",
+      "pl": "Pamiętaj, że mężczyźni mają większe szanse zachorowania na czerniaka."
+    },
+    "female": {
+      "en": "English Women die too",
+      "pl": "Polskie Kobiety umierajo"
+    },
+    "other": {
+      "en": "English I'dont know who are you so i cant give you an advice",
+      "pl": "Ani nie chłop, ani nie baba? Degenarat jakiś?"
+    }
   },
-  "female": { "en": "English Women die too", "pl": "Polskie Kobiety umierajo" },
-  "other": {
-   "en": "English I'dont know who are you so i cant give you an advice",
-   "pl": "Ani nie chłop, ani nie baba? Degenarat jakiś?"
-  }
- },
 
- "RespondentAge": {
-  "20": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentAge": {
+    "20": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "30": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "40": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "50": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "60": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "70": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "80": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "90": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   },
-  "30": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentCancerPast": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   },
-  "40": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentFamilyCancer": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   },
-  "50": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentSkinBehaviour": {
+    "never ": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "difficulty": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "easily": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "always": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   },
-  "60": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentFreckles": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   },
-  "70": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentFrecklesAmount": {
+    "lessThan20": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "moreThan20": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   },
-  "80": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentMoles": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   },
-  "90": {
-   "en": "Yes",
-   "pl": "Tak"
+  "RespondentHairColor": {
+    "black": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "brown": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "fair": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "red": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentRace": {
+    "Caucasian": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "Asian": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "Afro-carribean": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "Other": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentSunburn": {
+    "never": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "oneOrTwice": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "threeOrMore": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentDoctorVisits": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentPotentialDoctorVistits": {
+    "very unlikely": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "not likely": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "likely": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "very likely": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentSelfCheck": {
+    "never": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "once or twice a year": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "monthly": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "more than monthly": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentSunbathing": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentSolariumUse": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentSolariumUseFrequency": {
+    "veryInfrequently": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "oneToThreeTimesAYear": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "monthly": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "weeklyOrMore": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentSkinPortect": {
+    "true": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "false": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentVacationHabits": {
+    "none": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "oneOrTwo": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "threeOrFour": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "fiveOrMore": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentNewMoleReaction": {
+    "visitMyGP": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "askPartnerOrFriendToLookAt": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "ignoreIt": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
+  },
+  "RespondentNewMoleCheckSpeed": {
+    "lessThenOneMonth": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "lessThenTwoMonths": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "lessThenThreeMonths": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "eventually": {
+      "en": "Yes",
+      "pl": "Tak"
+    },
+    "never": {
+      "en": "Yes",
+      "pl": "Tak"
+    }
   }
- },
- "RespondentCancerPast": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentFamilyCancer": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentSkinBehaviour": {
-  "never ": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "difficulty": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "easily": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "always": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentFreckles": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentFrecklesAmount": {
-  "lessThan20": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "moreThan20": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentMoles": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentHairColor": {
-  "black": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "brown": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "fair": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "red": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentRace": {
-  "Caucasian": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "Asian": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "Afro-carribean": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "Other": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentSunburn": {
-  "never": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "oneOrTwice": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "threeOrMore": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentDoctorVisits": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentPotentialDoctorVistits": {
-  "very unlikely": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "not likely": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "likely": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "very likely": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentSelfCheck": {
-  "never": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "once or twice a year": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "monthly": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "more than monthly": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentSunbathing": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentSolariumUse": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentSolariumUseFrequency": {
-  "veryInfrequently": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "oneToThreeTimesAYear": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "monthly": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "weeklyOrMore": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentSkinPortect": {
-  "true": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "false": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentVacationHabits": {
-  "none": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "oneOrTwo": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "threeOrFour": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "fiveOrMore": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentNewMoleReaction": {
-  "visitMyGP": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "askPartnerOrFriendToLookAt": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "ignoreIt": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- },
- "RespondentNewMoleCheckSpeed": {
-  "lessThenOneMonth": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "lessThenTwoMonths": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "lessThenThreeMonths": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "eventually": {
-   "en": "Yes",
-   "pl": "Tak"
-  },
-  "never": {
-   "en": "Yes",
-   "pl": "Tak"
-  }
- }
 }

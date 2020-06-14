@@ -6,8 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Onkorisk CARIBA, Version 1.0" />
+    <meta name="author" content="Studenci Instytutu Inforamtyki UO 2020" />
 
     <title>Oncorisk</title>
 
@@ -17,8 +17,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-       <!--Onkorisk main stylesheet -->
-       <link href="css/main.css" rel="stylesheet" />
+    <!--Onkorisk main stylesheet -->
+    <link href="css/main.css" rel="stylesheet" />
 
     <!--Font Awesome Icons-->
     <link
@@ -51,6 +51,9 @@
 
     <!-- Script for accepting cookies -->
     <script src="js/cookieconsent.js"></script>
+
+    <!-- Send page visit to db -->
+    <script src="js/visitortodb.js"></script>
 
     <!-- Remember to close head tag in each page -->
   </head>

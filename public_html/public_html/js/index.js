@@ -3,7 +3,7 @@ $(document).ready(function () {
   else LanguageOnLoad();
   updateText();
   CookieConsent();
-  SendVisitorToDB();
+  FetchVisitorsNumberFromDB();
 });
 
 function updateText() {
@@ -57,16 +57,16 @@ function RenderVisitorsNumber(number) {
     $('#visitorsNumber').html(number);
   }
 }
-function SendVisitorToDB() {
-  $.ajax({
-    type: 'post',
-    url: './../php/POSTvisitorstodb.php',
-    data: {
-      get_online_visitor: 'online_visitor',
-      page: 'Index.html',
-    },
-    success: (response) => {
-      RenderVisitorsNumber(response);
-    },
-  });
+
+function FetchVisitorsNumberFromDB() {
+  $.get(`./../php/GETvisitorsnumber.php`, (data) => {})
+    .done((data) => {
+      RenderVisitorsNumber(data);
+    })
+    .done(() => {
+      console.log(`Fetching visitors number from db : success`);
+    })
+    .fail((jqXHR, textStatus, errorThrown) => {
+      console.log('Fetching visitors number from db failed');
+    });
 }

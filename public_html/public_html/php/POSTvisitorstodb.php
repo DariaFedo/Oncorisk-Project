@@ -16,13 +16,13 @@ function add_visitor($mysqli)
 {
     $current_time = time();
     $timeout = $current_time - (5);
-    $session_exist_query = "SELECT * FROM visitors WHERE session='" . $_SESSION['session'] . "'";
+    $session_exist_query = "SELECT * FROM visitors WHERE session='" . $_SESSION['session'] . "' AND time<$timeout";
 
     $session_exist = $mysqli->query($session_exist_query);
     $session_check = mysqli_num_rows($session_exist);
 
     if ($session_check == 0 && $_SESSION['session'] != "") {
-        $query = "INSERT INTO visitors (session,time) VALUES ('" . $_SESSION['session'] . "','" . $current_time . "')";
+        $query = "INSERT INTO visitors (session,time,ip) VALUES ('" . $_SESSION['session'] . "','" . $current_time . "','" . $_SERVER['REMOTE_ADDR'] . "')";
         $mysqli->query($query);
     } else {
         $sql = "UPDATE visitors SET time='" . time() . "' WHERE session='" . $_SESSION['session'] . "'";
